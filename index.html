@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Repositories</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="uh"> 
+        <header>
+            <div id="user-header" class="user-header">
+               
+            </div>
+        </header>
+    
+    </section>
+   
+    <div id="container" class="main-container">
+        <div class="left-container">
+            <img src="pics/github.png" alt="GitHub Repositories" class="landing-image">
+        </div>
+        <div class="right-container">
+            <div class="intro-container">
+                <h1>GitHub Repositories Search Project</h1>
+                <p>
+                    To get started, simply enter a GitHub username in the search form and click "Fetch Repositories."
+                </p>
+                <form id="username-form">
+                    <div class="search">
+                        <input type="text" id="username" class="input-field" placeholder="e.g. codeseeboy"  required >
+                        <button class="btn" type="submitn" id="fr" type="button" onclick="fetchAllRepositories(document.getElementById('username').value)">Search Repositories</button>
+                    </div>
+                </form>
+                 
+            </div>
+        </div>
+    </div>
+
+    <div id="loader">
+        <img src="pics/loader.gif" alt="Loader">
+    </div>
+
+    <div id="repositories" class="repositories-container"></div>
+    <div id="pan" class="pagination-container">
+        <button id="jumpPrevBtn" class="pan-btn" onclick="jumpToPreviousPage()">Previous
+    </button>  
+<div id="pageNumbers" class="page-numbers-container"></div>
+
+        
+        <button id="nextBtn" onclick="getNextPage()">Next</button>
+
+    <script src="js/app.js"></script>
+    <script src="js/prof.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9faee;
+    color: #333;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.966);
+    color: #ffffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.intro-container {
+    max-width: 600px;
+}
+
+.intro-container h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    font-size: 50px;
+    color: #17963d;
+}
+
+.intro-container p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+
+.landing-image {
+    margin: 20px;
+    max-width: 400px;
+    margin-right: 20px;
+}
+
+input {
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid #17963d;
+    padding: 15px;
+    border-radius: 13px;
+    font-family: 'Courier New', Courier, monospace;
+    outline: none;
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+}
+
+#loader img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
+
+.input-field::placeholder {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(63, 51, 51, 0.692);
+}
+
+button {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    margin: 20px;
+    color: #ffffffff;
+    background-color: #37a346;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    transition: background-color 0.2s ease-out;
+}
+
+button:hover {
+    background-color: #1d8a26;
+}
+
+.repositories-container {
+    margin-top: 20px;
+}
+
+#repositories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.repository {
+    margin: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 40%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.repository h3 {
+    margin: auto;
+    font-size: 24px;
+    color: #17963d;
+    margin-bottom: 10px;
+}
+
+.repository p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.repository p:last-child {
+    margin-top: 30px;
+}
+
+.repository span {
+    font-size: 15px;
+    color: black;
+    border-radius: 70px;
+    padding: 9px;
+    background-color: rgba(139, 110, 110, 0.575);
+}
+
+#pan {
+    display: none;
+}
+
+.user-header {
+    display: flex;
+    align-items: center;
+}
+
+.user-header img {
+    cursor: pointer;
+    padding: 2px;
+    object-fit: cover;
+    margin: 10px 50px;
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+    box-shadow: 0px 0px 8px 8px rgba(0, 128, 0, 0.582);
+}
+
+.about {
+   
+    width: 50%;
+    margin: 0px;
+}
+
+.about h1 {
+    text-align: center;
+    margin-left: 200px;
+    font-size: 45px;
+}
+
+.about p {
+    text-align: center;
+    margin-left: 200px;
+    font-size: 15px;
+}
+
+#pan {
+    text-align: center;
+}
+
+.pan-btn {
+    margin-top: 30px;
+}
+
+.page-numbers-container {
+    margin-left: 310px;
+    display: flex;
+}
+
+.page-numbers-container button {
+    width: 50px;
+    margin: 10px 15px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .landing-image {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .repository {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .user-header {
+        padding :1px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+   
+   .user-header img {
+        margin: 0px 10px;
+    }
+
+    .about {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .about h1,
+    .about p {
+        margin-left: 0;
+    }
+
+    .page-numbers-container {
+        display:contents;
+        justify-content: center;
+    }
+
+    .page-numbers-container button {
+        margin: 10px;
+    }
+}
